@@ -1,7 +1,8 @@
 @font-face {
     font-family: main;
-    src: url('Raleway-SemiBold.ttf');
+    src: url("Raleway-SemiBold.ttf");
 }
+
 html {
     width: 100%;
     height: 100%;
@@ -44,6 +45,7 @@ a {
     height: 60px;
     text-transform: uppercase;
 }
+
 .nav-logo {
     position: fixed;
     left: 20px;
