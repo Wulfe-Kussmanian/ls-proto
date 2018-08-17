@@ -12,10 +12,8 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background-image: url("../img/spiral.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -42,14 +40,14 @@ a {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 60px;
+    height: 80px;
     text-transform: uppercase;
 }
 
 .nav-logo {
     position: fixed;
     left: 20px;
-    top: 10px;
+    top: 5px;
     width: 64px;
     height: 64px;
 }
@@ -77,4 +75,13 @@ a {
 
 .nav-item:hover {
     border-bottom: 2px solid #ffffffff;
+}
+
+.home-bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/spiral.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
