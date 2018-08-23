@@ -1,0 +1,43 @@
+.link {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #00000000;
+    transition: border-color 0.1s ease-in-out;
+}
+.link:hover {
+    border-bottom: 1px solid #ffffffff;
+}
+.s {
+	background: #f00;
+	display: table;
+	width: 100vw;
+	height: 200px;
+}
+.s-center {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.s-text {
+	font-family: main;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #fff;
+	width: 400px;
+	/*height: 100px;*/
+	/*background-color: green;*/
+	display: inline-block;
+	vertical-align: top;
+}
+.s1-bg {
+    background-image: url("../img/spiral.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s1-logo {
+	width: 96px;
+	height: 96px;
+	margin: 10px;
+}
