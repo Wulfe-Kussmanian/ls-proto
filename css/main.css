@@ -75,6 +75,7 @@ a {
 	opacity: 1;
 }
 .nav-bar {
+    z-index: 10;
     position: fixed;
     /* background-color: #00000088; */
     color: #fff;
