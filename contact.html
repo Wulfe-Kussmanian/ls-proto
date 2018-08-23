@@ -6,7 +6,7 @@
     .form-outer-cont {
         display: table;
         position: relative;
-        background-color: red;
+        /*background-color: red;*/
         width: 100vw;
         height: calc(100vh - 180px);
         padding-top: 80px;
@@ -18,9 +18,71 @@
     }
     .form-bg {
         background-color: #ececec;
-        width: 500px;
-        height: 300px;
+        width: 800px;
+        height: 450px;
         margin: 0 auto;
+    }
+    .form-section {
+    	display: inline-block;
+    	height: 100%;
+    	position: relative;
+    	text-align: left;
+    }
+    .form-left {
+    	float: left;
+    	background-color: red;
+    	width: 600px;
+    }
+    .form-right {
+    	float: right;
+    	background-color: blue;
+    	width: 200px;
+    }
+    .form-stamp-bg {
+    	background-color: green;
+    	text-transform: uppercase;
+    	width: 125px;
+    	height: 135px;
+    	position: absolute;
+    	top: 20px;
+    	right: 20px;
+    }
+    .form-info {
+    	background-color: yellow;
+    	width: calc(100% - 20px);
+    	height: 225px;
+    	position: absolute;
+    	bottom: 0;
+    	padding: 10px;
+    }
+    .form-textbox {
+    	border: none;
+    	outline: none;
+    	border-bottom: 1px solid #f00;
+    	position: relative;
+    	width: calc(100% - 26px);
+    	margin: 10px;
+    	padding: 3px;
+    }
+    .form-textarea {
+    	border: none;
+    	outline: none;
+    	width: calc(100% - 26px);
+    	height: 297px;
+    	margin: 10px;
+    	padding: 3px;
+    	resize: none;
+    }
+    .form-obj {
+    	display: contents;
+    }
+    .form-title {
+    	font-size: 24px;
+    	font-family: main;
+    	text-transform: uppercase;
+    	letter-spacing: 2px;
+    	margin-top: 10px;
+    	margin-left: 15px;
     }
     </style>
 </head>
@@ -37,7 +99,20 @@
     </div>
     <div class="form-outer-cont">
         <div class="form-inner-cont">
-            <div class="form-bg">lmao</div>
+            <div class="form-bg">
+            	<form name="email-form" class="form-obj">
+	            	<div class="form-section form-left">
+	            		<div class="form-title">Send us your questions!</div>
+	            		<br><input type="text" class="form-textbox" name="name" placeholder="Full Name">
+	            		<br><input type="text" class="form-textbox" name="email" placeholder="Email Address">
+	            		<br><textarea form="email-form" class="form-textarea" name="msg" placeholder="Your message"></textarea>
+	            	</div>
+	            	<div class="form-section form-right">
+	            		<div class="form-stamp-bg">Submit</div>
+						<div class="form-info">This section will have basic info about the form or about response time.</div>
+	            	</div>
+	            </form>
+            </div>
             <!--
             	The border should be a border-image with the lines set up for tiling
             	The stamp should be an animated SVG. Gotta make that in Krita.
