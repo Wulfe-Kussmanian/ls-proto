@@ -1,7 +1,139 @@
 <!doctype html>
 <head>
     <title>Store - LootingSpree</title>
+    <style>
+		@font-face {
+		    font-family: main;
+		    src: url("css/Raleway-SemiBold.ttf");
+		}
+		html {
+		    width: 100%;
+		    height: 100%;
+		    margin: 0;
+		    padding: 0;
+		    overflow-x: hidden;
+		}
+		body {
+		    width: 100%;
+		    height: 100%;
+		    padding: 0;
+		    margin: 0;
+		}
+		/*body::after {*/
+		/*    content: "";*/
+		/*    display: block;*/
+		/*    height: 100px;*/
+		/*}*/
+		.nav-bar {
+		    z-index: 10;
+		    position: fixed;
+		    /* background-color: #00000088; */
+		    color: #fff;
+		    top: 0;
+		    left: 0;
+		    width: 100vw;
+		    height: 80px;
+		    text-transform: uppercase;
+		}
+		.nav-logo {
+		    position: fixed;
+		    left: 20px;
+		    top: 5px;
+		    width: 64px;
+		    height: 64px;
+		}
+		.nav-items-cont {
+		    position: fixed;
+		    top: 20px;
+		    right: 3vw;
+		    width: 520px;
+		    /* background-color: red; */
+		}
+		.nav-item {
+		    margin-left: 5px;
+		    margin-right: 5px;
+		    padding: 10px;
+		    display: inline-block;
+		    font-family: main;
+		    font-size: 12px;
+		    color: #fff;
+		    letter-spacing: 4px;
+		    cursor: pointer;
+		    border-bottom: 2px solid #00000000;
+		    transition: border-color 0.1s ease-in-out;
+		}
+		.nav-item:hover {
+		    border-bottom: 2px solid #ffffffff;
+		}
+		.footer {
+		    position: absolute;
+		    bottom: 0;
+		    display: block;
+		    background-color: #222;
+		    margin-top: 105px;
+		    width: 100vw;
+		    height: 100px;
+		}
+		.footer-cont {
+		    display: table;
+		    width: 100vw;
+		    height: 100px;
+		}
+		.footer-content {
+		    display: table-cell;
+		    /* background-color: red; */
+		    vertical-align: middle;
+		    text-align: center;
+		}
+		.footer-text {
+		    font-family: main;
+		    font-size: 12px;
+		    letter-spacing: 2px;
+		    text-transform: uppercase;
+		    color: #fff;
+		}
+
+    	.page-cont {
+    		min-height: 100%;
+    		position: relative;
+    	}
+    	.store {
+    		/*background-color: red;*/
+    		margin-top: 80px;
+    		width: 100vw;
+    		position: relative;
+    		/*height: calc(100vh - 180px);*/
+    		/*overflow: auto;*/
+    		font-family: main;
+    		padding-bottom: 100px;
+    	}
+    	.footer-helper {
+    		margin-top: 0;
+    	}
+    </style>
 </head>
 <body>
+	<div class="page-cont">
+		<div class="nav-bar" id="nav-bar" style="background-color: #000;">
+	        <div class="nav-logo"><a href="index.html"><img src="img/logo-alpha.png" width="64" height="64"></a></div>
+	        <div class="nav-items-cont">
+	            <a href="index.html"><div class="nav-item">Home</div></a>
+	            <a href="store.html"><div class="nav-item">Store</div></a>
+	            <a href="howto.html"><div class="nav-item">How To</div></a>
+	            <a href="pools.html"><div class="nav-item">Pools</div></a>
+	            <a href="contact.html"><div class="nav-item" style="margin-right:0px;">Contact Us</div></a>
+	        </div>
+	    </div>
+	    <div class="store">
+	    	<div id="my-store-13207064"></div><div><script type="text/javascript" data-cfasync="false" src="https://app.ecwid.com/script.js?13207064" charset="utf-8"></script><script type="text/javascript">xProductBrowser("id=my-store-13207064");</script></div>
+	    </div>
+	    <div class="footer footer-helper">
+			<div class="footer-cont">
+				<div class="footer-content">
+					<div class="footer-text">&#169; Copyleft 2018 LootingSpree | <a class="link" href="https://github.com/legostax/ls-proto">Source Code</a> | <a class="link" href="privacy.html">Privacy Policy</a> | <a class="link" href="tos.html">Terms of Service</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
