@@ -3,6 +3,10 @@
     <title>Contact Us - LootingSpree</title>
     <link rel="stylesheet" href="css/main.css">
     <style>
+    @font-face {
+        font-family: spacemono;
+        src: url("css/SpaceMono-Regular.ttf");
+    }
     .form-outer-cont {
         display: table;
         position: relative;
@@ -21,6 +25,8 @@
         width: 800px;
         height: 450px;
         margin: 0 auto;
+        border: 15px solid #ececec;
+        border-image: repeating-linear-gradient(45deg, #9c4e57, #9c4e57 40px, transparent 40px, transparent 82px, #344e78 82px, #344e78 122px, transparent 122px, transparent 162px) 15;
     }
     .form-section {
     	display: inline-block;
@@ -30,25 +36,34 @@
     }
     .form-left {
     	float: left;
-    	background-color: red;
+    	/* background-color: red; */
     	width: 600px;
     }
     .form-right {
     	float: right;
-    	background-color: blue;
+    	/* background-color: blue; */
     	width: 200px;
     }
     .form-stamp-bg {
-    	background-color: green;
+    	/* background-color: green; */
+        text-align: center;
+        font-family: spacemono;
+        color: #555;
+        letter-spacing: 2px;
+        border: 2px solid #aaa;
     	text-transform: uppercase;
     	width: 125px;
     	height: 135px;
     	position: absolute;
     	top: 20px;
     	right: 20px;
+        cursor: pointer;
     }
     .form-info {
-    	background-color: yellow;
+        font-family: spacemono;
+        /* line-height: 18px; */
+    	/* background-color: yellow; */
+        color: #555;
     	width: calc(100% - 20px);
     	height: 225px;
     	position: absolute;
@@ -56,21 +71,27 @@
     	padding: 10px;
     }
     .form-textbox {
+        font-family: spacemono;
     	border: none;
     	outline: none;
-    	border-bottom: 1px solid #f00;
+    	border-bottom: 1px solid #aaa;
+        color: #555;
     	position: relative;
     	width: calc(100% - 26px);
     	margin: 10px;
+        background-color: #ececec;
     	padding: 3px;
     }
     .form-textarea {
+        font-family: spacemono;
     	border: none;
     	outline: none;
+        color: #555;
     	width: calc(100% - 26px);
-    	height: 297px;
+    	height: 273px;
     	margin: 10px;
     	padding: 3px;
+        background-color: #ececec;
     	resize: none;
     }
     .form-obj {
@@ -108,7 +129,7 @@
             <a href="contact.html"><div class="nav-item" style="margin-right:0px;">Contact Us</div></a>
         </div>
     </div>
-    <div class="test"></div>
+    <!-- <div class="test"></div> -->
     <div class="form-outer-cont">
         <div class="form-inner-cont">
             <div class="form-bg">
@@ -120,8 +141,8 @@
 	            		<br><textarea form="email-form" class="form-textarea" name="msg" placeholder="Your message"></textarea>
 	            	</div>
 	            	<div class="form-section form-right">
-	            		<div class="form-stamp-bg">Submit</div>
-						<div class="form-info">This section will have basic info about the form or about response time.</div>
+	            		<div class="form-stamp-bg" id="submit">Submit</div>
+						<div class="form-info">We will get back to you within 24 hours. You can also reach us in our off&hairsp;icial Discord server. Simply message one of the staff.<br><a target="_blank" href="https://discord.gg/aYFYM74"><img src="img/discord-smol.png" width="32" height="32"></a>&nbsp;<a target="_blank" href="http://www.twitter.com/lootingspree"><img src="img/twitter-smol.png" width="32" height="32"></a>&nbsp;<a target="_blank" href="http://twitch.tv/lootingspree"><img src="img/twitch-smol.png" width="32" height="32"></a>&nbsp;<a target="_blank" href="http://www.youtube.com/channel/UCA47tRCRUVwLaOLQfetCRIw"><img src="img/yt-smol.png" width="32" height="32"></a></div>
 	            	</div>
 	            </form>
             </div>
@@ -138,5 +159,10 @@
 			</div>
 		</div>
 	</div>
+    <script type="text/javascript">
+        document.getElementById("submit").onclick = function(){
+            console.log("submit form");
+        }
+    </script>
 </body>
 </html>
