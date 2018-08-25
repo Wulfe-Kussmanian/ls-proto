@@ -116,16 +116,31 @@
         border: 10px solid #ececec;
         border-image: repeating-linear-gradient( 45deg, #9c4e57, #9c4e57 30px, transparent 25px, transparent 60px, #344e78 60px, #344e78 90px, transparent 90px, transparent 125px) 10;
     }
+    .bg-img {
+        background-image: url("img/beach.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .letter-link {
+        font-family: spacemono;
+        color: #555;
+        text-decoration: none;
+        border-bottom: 1px solid #00000000;
+        transition: border-color 0.1s ease-in-out;
+    }
+    .letter-link:hover {
+        border-bottom: 1px solid #555555ff;
+    }
     </style>
 </head>
-<body>
-    <div class="nav-bar" id="nav-bar" style="background-color: #000;">
+<body class="bg-img">
+    <div class="nav-bar" id="nav-bar">
         <div class="nav-logo"><a href="index.html"><img src="img/logo-alpha.png" width="64" height="64"></a></div>
         <div class="nav-items-cont">
             <a href="index.html"><div class="nav-item">Home</div></a>
             <a href="store.html"><div class="nav-item">Store</div></a>
             <a href="howto.html"><div class="nav-item">How To</div></a>
-            <a href="pools.html"><div class="nav-item">Pools</div></a>
             <a href="contact.html"><div class="nav-item" style="margin-right:0px;">Contact Us</div></a>
         </div>
     </div>
@@ -141,8 +156,8 @@
 	            		<br><textarea form="email-form" class="form-textarea" name="msg" placeholder="Your message"></textarea>
 	            	</div>
 	            	<div class="form-section form-right">
-	            		<div class="form-stamp-bg" id="submit">Submit</div>
-						<div class="form-info">We will get back to you within 24 hours. You can also reach us in our off&hairsp;icial Discord server. Simply message one of the staff.<br><a target="_blank" href="https://discord.gg/aYFYM74"><img src="img/discord-smol.png" width="32" height="32"></a>&nbsp;<a target="_blank" href="http://www.twitter.com/lootingspree"><img src="img/twitter-smol.png" width="32" height="32"></a>&nbsp;<a target="_blank" href="http://twitch.tv/lootingspree"><img src="img/twitch-smol.png" width="32" height="32"></a>&nbsp;<a target="_blank" href="http://www.youtube.com/channel/UCA47tRCRUVwLaOLQfetCRIw"><img src="img/yt-smol.png" width="32" height="32"></a></div>
+	            		<div class="form-stamp-bg" id="submit">Submit<br><span style="font-size:12px;">Click<br>Here</span></div>
+						<div class="form-info">We will get back to you within 24 hours. You can also reach us in our off&hairsp;icial <a class="letter-link" href="https://discord.gg/aYFYM74">Discord server</a>. Simply message one of the staff.<br><a target="_blank" href="https://discord.gg/aYFYM74"><img src="img/discord-smol.png" width="32" height="32"></a>&nbsp;<a target="_blank" href="http://www.twitter.com/lootingspree"><img src="img/twitter-smol.png" width="32" height="32"></a>&nbsp;<a target="_blank" href="http://twitch.tv/lootingspree"><img src="img/twitch-smol.png" width="32" height="32"></a>&nbsp;<a target="_blank" href="http://www.youtube.com/channel/UCA47tRCRUVwLaOLQfetCRIw"><img src="img/yt-smol.png" width="32" height="32"></a></div>
 	            	</div>
 	            </form>
             </div>
