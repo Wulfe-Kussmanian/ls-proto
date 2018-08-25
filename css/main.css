@@ -79,13 +79,14 @@ a {
 .nav-bar {
     z-index: 10;
     position: fixed;
-    /* background-color: #00000088; */
+    background-color: none;
     color: #fff;
     top: 0;
     left: 0;
     width: 100vw;
     height: 80px;
     text-transform: uppercase;
+    transition: background-color 0.75s;
 }
 .nav-logo {
     position: fixed;
@@ -98,7 +99,7 @@ a {
     position: fixed;
     top: 20px;
     right: 3vw;
-    width: 520px;
+    width: 426px;
     /* background-color: red; */
 }
 .nav-item {

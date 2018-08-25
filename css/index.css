@@ -1,5 +1,9 @@
+@font-face {
+	font-family: ubuntu;
+	src: url("Ubuntu-Regular.ttf");
+}
 .s {
-	background: #f00;
+	/* background-color: red; */
 	display: table;
 	width: 100vw;
 	height: 200px;
@@ -10,14 +14,13 @@
 	text-align: center;
 }
 .s-text {
-	font-family: main;
-	font-size: 16px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	font-family: ubuntu;
+	font-size: 24px;
+	letter-spacing: 1px;
 	color: #fff;
-	width: 400px;
+	width: 800px;
 	/*height: 100px;*/
-	/*background-color: green;*/
+	/* background-color: green; */
 	display: inline-block;
 	vertical-align: top;
 }
@@ -26,6 +29,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.s1-title {
+	font-family: main;
+	font-size: 48px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
 }
 .s1-logo {
 	width: 96px;
