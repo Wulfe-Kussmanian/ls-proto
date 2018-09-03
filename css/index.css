@@ -2,6 +2,38 @@
 	font-family: ubuntu;
 	src: url("Ubuntu-Regular.ttf");
 }
+.dot-cont {
+	position: fixed;
+	right: 0;
+	top: calc(50vh - 50px);
+	height: 100px;
+	width: 25px;
+	z-index: 11;
+}
+.dot-click {
+	cursor: pointer;
+	padding: 10px 0;
+}
+.dot {
+	display: block;
+	position: static;
+	background-color: #ffffff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 2px;
+	height: 2px;
+	margin: 0 4px;
+}
+.dot-black {
+	background-color: #000;
+	border: 1px solid #000;
+}
+.dot-selected {
+	background-color: #ffffff00;
+	width: 10px;
+	height: 10px;
+	margin: 0;
+}
 .s {
 	/* background-color: red; */
 	display: table;
