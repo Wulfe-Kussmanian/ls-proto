@@ -1,6 +1,7 @@
 new fullpage("#fullpage", {
 	licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
 	fixedElements: "#nav-bar",
+	scrollingSpeed: 500,
 	onLeave: function(origin, destination, direction){
 		if(destination.index == 0){
 			console.log("make nav-bar transparent");
