@@ -107,7 +107,7 @@
     	margin-left: 25px;
     }
     .bg-img {
-        background-image: url("img/beach.png");
+        /* background-image: url("img/beach.png"); */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -124,7 +124,7 @@
     }
     </style>
 </head>
-<body class="bg-img">
+<body id="bg-img" class="bg-img">
     <div class="nav-bar" id="nav-bar">
         <div class="nav-logo"><a href="index.html"><img src="img/logo-alpha.png" width="64" height="64"></a></div>
         <div class="nav-items-cont">
@@ -159,10 +159,6 @@
 			</div>
 		</div>
 	</div>
-    <script type="text/javascript">
-        document.getElementById("submit").onclick = function(){
-            console.log("submit form");
-        }
-    </script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
