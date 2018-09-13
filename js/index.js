@@ -9,7 +9,6 @@ if(innerWidth <= 1280){
 }else{
 	screenWidth = "3840"; // 4K
 }
-console.log(screenWidth);
 // 1280x720, 1920x1080, 2560x1440, 3840x2160
 document.getElementById("s1").style.backgroundImage = "url('img/spiral-" + screenWidth + ".jpg')";
 
