@@ -10,6 +10,10 @@ if(innerWidth <= 1280){
 	screenWidth = "3840"; // 4K
 }
 // 1280x720, 1920x1080, 2560x1440, 3840x2160
+document.getElementById("s1").style.backgroundSize = "cover";
+document.getElementById("s1").style.backgroundRepeat = "no-repeat";
+document.getElementById("s1").style.backgroundPosition = "center center";
+
 document.getElementById("s1").style.backgroundImage = "url('img/spiral-" + screenWidth + ".jpg')";
 
 function resetDots(){
