@@ -56,8 +56,8 @@
 	display: inline-block;
 	vertical-align: top;
 }
-.s1-bg {
-    background-image: url("../img/spiral.png");
+.bg {
+    /* background-image: url("../img/spiral.png"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,17 +1,11 @@
 <!doctype html>
 <head>
     <title>Homepage</title>
-    <!-- fullPage.js stuff -->
     <link rel="stylesheet" href="css/fullpage.min.css">
     <script src="js/fullpage.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--
-    	TODO:
-        - code cleanup
-    	- Mobile CSS adaptation
-    -->
 </head>
 <body>
     <div class="nav-bar" id="nav-bar">
@@ -31,12 +25,7 @@
         <div class="dot-click" id="dot4c"><div class="dot" id="dot4"></div></div>
     </div>
     <div id="fullpage">
-        <!--
-            TODO:
-            - Mobile CSS
-            - Add the 4 dots on the side for scrolling
-        -->
-        <div class="section s1-bg">
+        <div id="s1" class="section bg">
         	<div class="s">
             	<div class="s-center">
             		<div class="s-text"><div class="s1-title">Fast & Efficient</div>
@@ -48,21 +37,21 @@
             	</div>
             </div>
         </div>
-        <div class="section">
+        <div id="s2" class="section bg">
         	<div class="s">
         		<div class="s-center">
         			<div class="s-text s2-text">This section will <i>concisely</i> explain what cryptocurrency is. Do we want another bg-img here? Or are we doing white/off-white bg from here on?</div>
         		</div>
         	</div>
         </div>
-        <div class="section">
+        <div id="s3" class="section bg">
         	<div class="s">
         		<div class="s-center">
         			<div class="s-text s2-text">This section will cover possible returns with fiat currency comparisons.</div>
         		</div>
         	</div>
         </div>
-        <div class="section">
+        <div id="s4" class="section bg">
         	<div class="s">
         		<div class="s-center">
         			<div class="s-text s2-text"><div class="s1-title">Ready to start?</div><br>Put STORE button here.<br>This will also include all relevant tiny footer links (such as privacy policy, ToS, etc.)</div>
